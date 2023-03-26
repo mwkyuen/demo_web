@@ -1,0 +1,6 @@
+name: demo_web_app
+channels:
+  - conda-forge
+dependencies:
+- python>=3.10
+- Flask>=2.2

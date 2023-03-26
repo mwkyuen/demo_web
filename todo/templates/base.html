@@ -1,0 +1,15 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+  <h1>Mike's list of todos</h1>
+  <ul>
+      <li><a href="{{ url_for('todo.view') }}">View</a></li>
+      <li><a href="{{ url_for('todo.create') }}">Create</a></li>
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% block body %}{% endblock %}
+</section>
